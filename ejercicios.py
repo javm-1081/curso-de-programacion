@@ -40,3 +40,4 @@ elif edad <18 and edad >= 0:
     print("Eres menor de edad")
 
 #ejercicio 4 
+hjhj
