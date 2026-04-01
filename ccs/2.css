@@ -1,0 +1,10 @@
+.tarjeta-producto {
+    
+    padding: 15px;
+     border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+.tarjeta-producto img {
+    max-width: 100%;
+    display: block;
+}
