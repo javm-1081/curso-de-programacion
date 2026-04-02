@@ -136,14 +136,14 @@ while True:
      print("5. Salir")
      opcion = input("Qué deseas hacer?: ")
 
-     if opcion == 1:
+     if opcion == "1":
          nombre = input("Nombre del contacto: ")
-         numero = input("Número de contacto")
+         numero = input(int(("Número de contacto: ")))
          agenda[nombre] = numero
          print("El contacto ha sido añadido")
     
-     elif opcion == 2:
-         nombrebuscar = input("Nombre del contacto a buscar")
+     elif opcion == "2":
+         nombrebuscar = input("Nombre del contacto a buscar: ")
          
          if nombrebuscar in agenda:
              print(f"Su numero es {agenda[nombrebuscar]}")
@@ -151,13 +151,13 @@ while True:
          else:
           print("No se encontró el contacto")
 
-     elif opcion == 3: 
+     elif opcion == "3": 
          if not agenda:
              print("La agenda está vacía")
          else:
              mostrarcontactos()
      
-     elif opcion == 4:
+     elif opcion == "4":
          nombreeliminar = input("NOmbre del contacto a eliminar: ")
          if nombreeliminar in agenda:
              agenda.pop(nombreeliminar)
@@ -165,10 +165,43 @@ while True:
          else:
              print("No se encontró el contacto")
 
-     elif opcion == 5:
+     elif opcion == "5":
          print("Hasta pronto")
          break 
      
      else:
          print("Esa no es una respuesta válida")
 
+#ejercicio8
+
+def elementoscomunes(lista1, lista2):
+    
+    lista1 = set(lista1)
+    lista2 = set(lista2)
+    
+    return list(lista1 & lista2)
+
+numeros1 = [1, 2, 2, 3, 4, 5, 6]
+numeros2 = [3, 4, 7, 9, 10]
+
+resultado = elementoscomunes(numeros1, numeros2)
+
+print(resultado)
+
+
+#ejercicio9
+
+listatuplas = [('nombre', 'Ana'), ('edad', 22), ('ciudad', 'Valencia')]
+
+resultado = dict(listatuplas)
+
+print(resultado)
+
+#ejercicio10
+
+def triangulo(n):
+    for i in range(1, n + 1):
+        print("*" * i)
+
+n = int(input("Introduce la altura: "))
+triangulo(n)
