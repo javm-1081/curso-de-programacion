@@ -63,13 +63,13 @@ elif decision1 == "tocar":
                          print("El 3ra base no atrapó la bola y seguiste hacia home plate, pero el jardinero lanza la bola a home y llega al mismo tiempo que tú.")
                          decision66 = input("Qué haces? Saltar, Deslizarte o Chocar ")
                          
-                         if decision66 == "Deslizarte" or decision6 == "Deslizarme":
+                         if decision66 == "Deslizarte" or decision66 == "Deslizarme":
                             print("Safe, anotaste y tu equipo ganó")
                 
-                         elif decision6 == "Chocar":
+                         elif decision66 == "Chocar":
                              print("El receptor aguantó el choque, estás fuera")
             
-                     elif decision5 == "Regresar":
+                     elif decision55 == "Regresar":
                          print("Te hicieron out en segunda, tu equipo perdió")
 
 else:
