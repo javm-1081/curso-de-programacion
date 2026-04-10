@@ -1,0 +1,12 @@
+.boton-ayuda {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;              
+    padding: 15px 30px;        
+    border: none;              
+    border-radius: 50px;      
+    font-weight: bold;
+    cursor: pointer;          
+}

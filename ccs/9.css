@@ -1,0 +1,26 @@
+/* 1. Estilos Base (Mobile First) */
+.contenedor-responsivo {
+    padding: 20px;
+}
+
+.panel {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+@media (min-width: 800px) {
+    .contenedor-responsivo {
+        display: flex; 
+        gap: 20px;     
+    }
+
+    .panel {
+        width: 50%;   
+        margin-bottom: 0; 
+    }
+}
